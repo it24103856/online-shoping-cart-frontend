@@ -9,5 +9,15 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      // ලෝඩර් එකක් කොහේ හරි හිරවෙලා තිබුණොත් ඇප් එක ක්‍රෑෂ් වෙන්න නොදී බේරගන්න
+      window.Loader = function() {
+        var div = document.createElement('div');
+        div.style.textAlign = 'center';
+        div.style.padding = '20px';
+        div.innerText = 'Loading...';
+        return div;
+      };
+    </script>
   </body>
 </html>
