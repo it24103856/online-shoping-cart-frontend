@@ -11,7 +11,7 @@ import { GoogleLogin, GoogleOAuthProvider } from '@react-oauth/google'
 
 function App() {
   return (
-    <GoogleOAuthProvider clientId={import.meta.env.VITE_GOOGLE_CLIENT_ID}>
+    <GoogleOAuthProvider clientId="601712598116-ckm9o17glc4rkas75394cfdcp74glbig.apps.googleusercontent.com">
       <BrowserRouter>
         <Toaster />
         <div className='w-full h-screen bg-[#F3F4F6] text-[#1F1F1F]'>
