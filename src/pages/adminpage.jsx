@@ -9,7 +9,7 @@ import { FaUsers } from "react-icons/fa";
 import { LuBoxes } from "react-icons/lu";
 import { useState, useEffect} from "react";
 import axios from "axios";
-import Loader from "../components/loader";
+import Loader from "../components/Loader";
 
 import AdminAddProductsPage from "./admin/adminProductAddPage";
 import AdminProductsPage from "./admin/adminProductPage";
