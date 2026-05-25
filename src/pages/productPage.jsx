@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import ProductCard from "../components/productCard";
+import ProductCard from "../components/ProductCard";
 import { Search, Filter, LayoutGrid } from "lucide-react";
 
 export default function ProductPage() {
