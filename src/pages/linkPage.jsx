@@ -13,7 +13,7 @@ import ReviewPage from "./reviewPage";
 import FeedbackPage from "./feedbackPage";
 import MyOrderPage from "../components/MyOrderPage";
 import MyPayment from "../components/MyPayment";
-import ProfilePage from "./profilePage";
+import ProfilePage from "./ProfilePage";
 import ProductOverview from "./productOverview";
 import Cartpage from "./cart";
 import CheckOutPage from "./checkOut";
