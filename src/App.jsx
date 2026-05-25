@@ -6,7 +6,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Toaster } from 'react-hot-toast'
 import RegisterPage from './pages/registerPage'
 import ForgetPasswordPage from './pages/forgetpaswordPage'
-import AdminPage from './pages/adminPage'
+import AdminPage from './pages/adminpage'
 import { GoogleLogin, GoogleOAuthProvider } from '@react-oauth/google'
 
 function App() {
