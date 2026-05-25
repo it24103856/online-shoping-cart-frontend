@@ -11,7 +11,7 @@ export default function FeedbackPage() {
     feedback: "",
   });
 
-  const categories = ["website", "services", "cake", "acessories", "All"];
+  const categories = ["Products", "website", "services", "All"];
 
   const handleSubmit = async (e) => {
     e.preventDefault();
