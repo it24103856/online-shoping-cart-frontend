@@ -5,19 +5,20 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>frontend</title>
+    <script>
+      // සයිට් එක ක්‍රෑෂ් වෙන්න නොදී බේරාගන්නා Global Loader Override එක
+      window.Loader = function() {
+        var el = document.createElement('div');
+        el.style.textAlign = 'center';
+        el.style.padding = '20px';
+        el.style.color = '#888';
+        el.innerText = 'Loading...';
+        return el;
+      };
+    </script>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
-    <script>
-      // ලෝඩර් එකක් කොහේ හරි හිරවෙලා තිබුණොත් ඇප් එක ක්‍රෑෂ් වෙන්න නොදී බේරගන්න
-      window.Loader = function() {
-        var div = document.createElement('div');
-        div.style.textAlign = 'center';
-        div.style.padding = '20px';
-        div.innerText = 'Loading...';
-        return div;
-      };
-    </script>
   </body>
 </html>
