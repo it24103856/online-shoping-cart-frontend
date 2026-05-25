@@ -2,7 +2,6 @@ import { Navigate, useNavigate, useParams } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { toast } from "react-hot-toast";
-import Loader from "../components/Loader";
 import { addToCart, getCart } from "../utils/cart.js";
 
 export default function ProductOverview() {
@@ -34,7 +33,11 @@ export default function ProductOverview() {
 
     return (
         <div className="w-full min-h-screen flex flex-col items-center bg-white font-sans">
-            {status === "loading" && <Loader />}
+            {status === "loading" && (
+                <div className="w-full h-screen flex justify-center items-center">
+                    <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-blue-600"></div>
+                </div>
+            )}
 
             {status === "error" && (
                 <div className="w-full h-screen flex justify-center items-center text-red-500 font-semibold text-2xl">

@@ -17,7 +17,7 @@ import AdminUserPage from "./admin/adminUserpage";
 import AdminDashboard from "./admin/adminDashboard";
 import AdminOrdersPage from "./admin/adminOrderPage";
 import AdminFeedbackPage from "./admin/adminFeedbackPage";
-import Loader from "../components/Loader";
+
 export default function AdminPage(){
     const [user, setUser] = useState(null);
     const [isLoading, setIsLoading] = useState(true);
@@ -56,7 +56,11 @@ export default function AdminPage(){
 
     // Show loader while checking authentication
     if (isLoading) {
-        return <Loader />;
+        return (
+            <div className="w-full h-screen flex justify-center items-center">
+                <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-blue-600"></div>
+            </div>
+        );
     }
 
     // Only render admin UI if authenticated and authorized
