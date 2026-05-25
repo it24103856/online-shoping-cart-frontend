@@ -2,7 +2,7 @@ import { Navigate, useNavigate, useParams } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { toast } from "react-hot-toast";
-import Loader from "../components/Loader.jsx";
+import { Star, MessageSquare, Loader } from "lucide-react";
 import { addToCart, getCart } from "../utils/cart.js";
 
 export default function ProductOverview() {
