@@ -12,7 +12,7 @@ export default function AboutPage() {
 
       {/* 1. Hero Section with Background Image */}
       <section className="relative h-[60vh] flex items-center justify-center bg-fixed bg-center bg-cover"
-               style={{ backgroundImage: "url('/public/about.jpg')" }}>
+               style={{ backgroundImage: "url('/about.jpg')" }}>
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="relative z-10 text-center text-white px-4">
           <p className="uppercase text-[11px] tracking-[0.3em] font-semibold text-white/60 mb-4">Who We Are</p>
@@ -61,7 +61,7 @@ export default function AboutPage() {
           className="relative"
         >
           <img
-            src="/public/background.jpg"
+            src="/background.jpg"
             alt="Computer hardware products"
             className="rounded-[15rem] shadow-sm hover:shadow-2xl transition-all duration-500 z-10 relative"
           />

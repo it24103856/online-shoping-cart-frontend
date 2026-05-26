@@ -22,20 +22,6 @@ export default function ContactPage() {
   const [isLoading, setIsLoading] = useState(false);
   const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
-  useEffect(() => {
-    const fetchAdmin = async () => {
-      try {
-        const res = await axios.get(`${backendUrl}/contact/get`);
-        if (res.data?.data) {
-          setAdminDetails(res.data.data);
-        }
-      } catch (err) { 
-        console.error("Error fetching admin details:", err); 
-      }
-    };
-    fetchAdmin();
-  }, [backendUrl]);
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prev => ({
@@ -70,7 +56,7 @@ export default function ContactPage() {
 
       {/* 1. Hero Section */}
       <section className="relative h-[50vh] flex items-center justify-center bg-fixed bg-center bg-cover"
-               style={{ backgroundImage: "url('/public/about.jpg')" }}>
+               style={{ backgroundImage: "url('/about.jpg')" }}>
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="relative z-10 text-center text-white px-4">
           <p className="uppercase text-[11px] tracking-[0.3em] font-semibold text-white/60 mb-4">Get In Touch</p>
